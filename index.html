@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>SER 421 - Lab 4</title>
+  <script = src="SPA.js" type="text/javascript"></script>
+</head>
+<body>
+  <h1>SER 421 - Lab 4 - Jeff Gillispie (JGILLISP)</h1>
+  <div>
+    <strong>Rooms: </strong>
+    <span id="gameRoomList" />
+  </div>
+  <div>
+    <strong>Guests: </strong>
+    <span id="gameGuestList" />
+  </div>
+  <div>
+    <strong>Weapons: </strong>
+    <span id="gameWeaponList" />
+  </div>
+  <hr />
+  <div id="greetingSection"></div>
+  <form>
+    <div>
+      <strong>Guess Room: </strong>
+      <select id="roomSelector"></select>
+    </div>
+    <div>
+      <strong>Guess Suspect: </strong>
+      <select id="suspectSelector"></select>
+    </div>
+    <div>
+      <strong>Guess Weapon: </strong>
+      <select id="weaponSelector"></select>
+    </div>
+    <br />
+    <input type="submit" value="Guess"
+      id="guessButton" onclick="return processGuess()" disabled />
+  </form>
+  <div id="messageSection"></div>
+  <hr />
+  <div id="historySection"></div>
+  <script>setupLandingPage()</script>
+</body>
+</html>
